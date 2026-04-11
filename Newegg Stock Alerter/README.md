@@ -22,6 +22,6 @@ g++ main.cpp -IC:\vcpkg\installed\x64-mingw-dynamic\include -LC:\vcpkg\installed
 ```
 
 ## Work in progress
-- [ ] Auto-repeat checking on an interval
-- [ ] Sound/desktop alert when item comes in stock
+- [X] Auto-repeat checking on an interval
+- [X] Sound/desktop alert when item comes in stock
 - [ ] Support for multiple items
