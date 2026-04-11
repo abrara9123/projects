@@ -1,11 +1,13 @@
 # Newegg Stock Alerter
 
-A C++ program that monitors a Newegg product page and alerts you when an item is in stock.
+A C++ program that monitors multiple Newegg product pages simultaneously and alerts you when an item comes in stock.
 
 ## What it does
-- Fetches a Newegg product page using libcurl
+- Fetches multiple Newegg product pages simultaneously using libcurl
 - Searches the HTML for stock availability
 - Checks stock status every 60 seconds automatically
+- Uses multithreading to monitor multiple items at the same time
+- Uses mutex locks to prevent race conditions between threads
 - Plays a sound alert when stock status changes
 - Opens a terminal popup when item comes in stock
 - Logs all status changes with timestamps to `newegg_log.txt`
@@ -33,6 +35,8 @@ g++ main.cpp -IC:\vcpkg\installed\x64-mingw-dynamic\include -LC:\vcpkg\installed
 - [x] Sound alert when item comes in stock
 - [x] Terminal popup alert
 - [x] Timestamp logging to file
-- [ ] Support for multiple items
+- [x] Support for multiple items
+- [x] Multithreading with mutex locks
 - [ ] Email alert
 - [ ] Error handling for connection failures
+- [ ] Deploy to cloud to run 24/7
