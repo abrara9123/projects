@@ -22,17 +22,21 @@ A C++ program that monitors multiple Newegg product pages simultaneously and ale
 - [libcurl](https://curl.se/libcurl/)
 - MinGW / MSYS2 (Windows)
 
-## How to compile
+## How to compile and run
 ```bash
+# Build and run in one command
+make run
+
+# Build only
 make
+
+# Clean compiled files
+make clean
 ```
+
 Or manually:
 ```bash
 g++ main.cpp -IC:\vcpkg\installed\x64-mingw-dynamic\include -LC:\vcpkg\installed\x64-mingw-dynamic\lib -lcurl -o prog
-```
-
-## How to run
-```bash
 ./prog
 ```
 
