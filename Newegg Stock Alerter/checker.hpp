@@ -57,7 +57,7 @@ else{
 
 if(currentstatus != prevstatus){
     if(currentstatus){
-    AlertMutex();
+    AlertMutex(checkUrl);
     logtoFile(getTimeStamp(),currentstatus);
     }
     else{
