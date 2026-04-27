@@ -1,3 +1,7 @@
+
+
+https://github.com/user-attachments/assets/be2b4c9f-51c5-41d9-a347-63308ac3e858
+
 # Newegg Stock Alerter
 
 A C++ program that monitors multiple Newegg product pages simultaneously and alerts you when an item comes in stock.
